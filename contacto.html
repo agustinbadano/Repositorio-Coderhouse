@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="Recetas.html">Recetas</a>
+            <a href="Acercadenosotros.html">Acerca de nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+
+        </nav>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form id="formulario" action="enviar.php" method="POST" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Envía tu recomendación</legend>
+    <label for="nombreyapellido">Nombre y Apellido</label> 
+    <input type="text" name="nombreyapellido" maxlength="100">
+    <br>
+    <label for="password">Contraseña</label>
+    <input type="password">
+    <br>
+    <h4>Sexo:</h4>
+    <label>Masculino</label>
+    <input type="radio" name="sexo" value="Masculino">
+    <label>Femenino</label>
+    <input type="radio" name="sexo" value="Femenino">
+    <label>Otro</label>
+    <input type="radio" name="sexo" value="Otro">
+    <br>
+    <input type="submit" name="submit" value="Enviar">
+    <input type="reset" name="reset" value="Limpiar">
+  </fieldset>
+</form></body>
+</html>
